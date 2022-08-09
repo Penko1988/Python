@@ -1,0 +1,7 @@
+deposit = float(input())
+mouths = int(input())
+annual_interest_percent = float(input())
+annuel_interest = deposit * annual_interest_percent /100
+monthly_interest = annuel_interest / 12
+total_sum = deposit + (mouths * monthly_interest)
+print(total_sum)

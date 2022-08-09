@@ -1,0 +1,6 @@
+count_pages = int(input())
+pages_per_hour = int(input())
+days = int(input())
+fulltime = count_pages / pages_per_hour
+hours_required = fulltime // days
+print(hours_required)

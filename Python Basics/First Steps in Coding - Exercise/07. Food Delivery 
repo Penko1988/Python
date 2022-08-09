@@ -1,0 +1,19 @@
+chiken = int(input())
+fish = int(input())
+vegetable = int(input())
+
+price_chiken = 10.35
+price_fish = 12.40
+price_vegetable = 8.15
+delivery = 2.50
+
+chiken_sum = chiken * price_chiken
+fish_sum = fish * price_fish
+vegetable_sum = vegetable * price_vegetable
+
+sum = chiken_sum + fish_sum + vegetable_sum
+procent = sum * 0.2
+
+total_sum = sum + procent + delivery
+
+print(total_sum)

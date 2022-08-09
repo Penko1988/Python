@@ -1,0 +1,10 @@
+training_years = int(input())
+
+kecove = training_years * 0.6
+ekip = kecove * 0.8
+topka = ekip / 4
+aksesoari = topka / 5
+
+total_price = training_years + kecove + ekip + topka + aksesoari
+
+print(total_price)

@@ -1,0 +1,7 @@
+meters = float(input())
+price = 7.61
+sum = meters * price
+discount = sum * 0.18
+needed_sum = sum - discount
+print(f"The final price is: \{needed_sum\} lv.")
+print(f"The discount is: \{discount\} lv.")

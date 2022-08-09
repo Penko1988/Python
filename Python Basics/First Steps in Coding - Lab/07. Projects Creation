@@ -1,0 +1,5 @@
+name = input()
+number_projeckt = int(input())
+projeckt = 3
+need_projeckt = number_projeckt * projeckt
+print(f"The architect \{name\} will need \{need_projeckt\} hours to complete \{number_projeckt\} project/s.")

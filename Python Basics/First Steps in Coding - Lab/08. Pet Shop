@@ -1,0 +1,8 @@
+numbers_dog = int(input())
+numbers_cat = int(input())
+price_dog = 2.50
+price_cat = 4.00
+price_dog_sum = numbers_dog * price_dog
+price_cat_sum = numbers_cat * price_cat
+needed_sum = price_dog_sum + price_cat_sum
+print(f"\{needed_sum\} lv.")

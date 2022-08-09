@@ -1,0 +1,4 @@
+inc = float(input())
+sm = 2.54
+num = inc * sm
+print (num)

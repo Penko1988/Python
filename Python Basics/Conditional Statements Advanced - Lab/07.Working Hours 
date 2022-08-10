@@ -1,0 +1,17 @@
+day_and_night = int(input())
+week_day = input()
+
+if 10 <= day_and_night <= 18 and week_day == "Monday":
+    print("open")
+elif 10 <= day_and_night <= 18 and week_day == "Tuesday":
+    print("open")
+elif 10 <= day_and_night <= 18 and week_day == "Wednesday":
+    print("open")
+elif 10 <= day_and_night <= 18 and week_day == "Thursday":
+    print("open")
+elif 10 <= day_and_night <= 18 and week_day == "Friday":
+    print("open")
+elif 10 <= day_and_night <= 18 and week_day == "Saturday":
+    print("open")
+else:
+    print("closed")

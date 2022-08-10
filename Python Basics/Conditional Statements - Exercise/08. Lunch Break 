@@ -1,0 +1,16 @@
+import math
+
+name_of_serials = input()
+time_episod = int(input())
+time_break = int(input())
+
+time_lunch = time_break * 1 / 8
+time_otdih = time_break * 1 / 4
+total_time = time_break - time_lunch - time_otdih
+
+needs_time = math.ceil(abs(time_episod - total_time))
+
+if total_time >= time_episod:
+    print(f"You have enough time to watch {name_of_serials} and left with {needs_time} minutes free time.")
+else:
+    print(f"You don't have enough time to watch {name_of_serials}, you need {needs_time} more minutes.")

@@ -1,0 +1,21 @@
+budget_of_petar = float(input())
+num_video_cards = int(input())
+num_processors = int(input())
+num_ram = int(input())
+
+price_video_cards = 250
+
+sum_video_cards = num_video_cards * price_video_cards
+sum_processors = num_processors * (sum_video_cards * 0.35)
+sum_ram = num_ram * (sum_video_cards * 0.10)
+
+total_sum = sum_video_cards + sum_processors + sum_ram
+
+if num_video_cards > num_processors:
+    total_sum = total_sum * 0.85
+diff = abs(budget_of_petar - total_sum)
+if budget_of_petar >= total_sum:
+
+    print(f"You have {diff:.2f} leva left!")
+else:
+    print(f"Not enough money! You need {diff:.2f} leva more!")

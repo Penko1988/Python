@@ -1,0 +1,17 @@
+budget = float(input())
+num_statist = int(input())
+one_price_dress = float(input())
+
+decor = budget * 0.1    #budget * 10 /100
+dress_price = num_statist * one_price_dress
+
+if num_statist > 150:
+    dress_price *= 0.9  # dress_price = dress_price * 90 / 100
+needed_money = decor + dress_price
+difference = abs(needed_money - budget)
+if needed_money > budget:
+    print("Not enough money!")
+    print(f"Wingard needs {difference:.2f} leva more.")
+else:
+    print("Action!")
+    print(f"Wingard starts filming with {difference:.2f} leva left.")

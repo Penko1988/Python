@@ -1,0 +1,20 @@
+start = int(input())
+end = int(input())
+magic_num = int(input())
+
+counter_of_combinations = 0
+
+combinations_is_found = False
+
+for first_number in range(start, end + 1):
+    for second_number in range(start, end + 1):
+        counter_of_combinations += 1
+        if first_number + second_number == magic_num:
+            combinations_is_found = True
+            break
+    if combinations_is_found:
+        break
+if combinations_is_found: #if combinations_is_found == True
+    print(f"Combination N:{counter_of_combinations} ({first_number} + {second_number} = {magic_num})")
+else:
+    print(f"{counter_of_combinations} combinations - neither equals {magic_num}")

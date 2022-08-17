@@ -1,0 +1,15 @@
+data = input().split()
+searched = input().split()
+
+products = {}
+
+for i in range(0, len(data), 2):
+    key = data[i]
+    value = data[i + 1]
+    products[key] = value
+
+for word in searched:
+    if word in products:
+        print(f"We have {products[word]} of {word} left")
+    else:
+        print(f"Sorry, we don't have {word}")

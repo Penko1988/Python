@@ -1,0 +1,36 @@
+command = input()
+data = {}
+all_languages = []
+count_languages = []
+ 
+while not command == 'exam finished':
+    command = command.split("-")
+    if command[1] == "banned":
+        name = command[0]
+        del data[name]
+        command = input()
+        continue
+    elif not command[1] == 'banned':
+        name = command[0]
+        language = command[1]
+        points = int(command[2])
+    if name not in data:
+        data[name] = points
+    else:
+        if points > data[name]:
+            data[name] = points
+    all_languages += [language]
+    
+    if language not in count_languages:
+        count_languages.append(language)
+ 
+    command = input()
+ 
+print('Results:')
+for name, points in data.items():
+    print(f'{name} | {points}')
+ 
+print('Submissions:')
+for subm in range(len(count_languages)):
+    result = count_languages[subm]
+    print(f"{count_languages[subm]} - {all_languages.count(result)}")
